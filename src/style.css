@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url('./RobotoSlab.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body{
+  font-family:'RobotoSlab';
+  overflow-x: hidden;
+}
+
+/* nav section */
+
+.nav_section{
+  width: 100vw;
+  height: 75vh;
+  background-image: url("./snowman.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  position: relative;
+}
+
+h1{
+  font-size: 50px;
+  font-weight: bold;
+  color: #3882F6;
+
+  position: absolute;
+  bottom: 2vh;
+  right: 2vw;
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  bottom: -70px;
+}
+
+nav>ul{
+  width: 60%;
+  display: flex;
+  border: 5px solid #3882F6;
+  transform: skew(10deg);
+}
+
+ul>a{
+  flex:1;
+}
+
+ul>a:hover{
+  flex:2;
+}
+
+a>li{
+  margin:5px;
+  padding:15px 0;
+  background: #3882F6;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#current_div{
+  margin-top:80px;
+  width: 100vw;
+}
+/* home section */
+div[class="intro_item"], div[class="intro_item reverse_order"]{
+  
+  padding: 60px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+div[class="intro_item"]{
+
+  color:white;
+  background-color: #1F2937;
+}
+
+div[class="intro_item"]>span, div[class="intro_item reverse_order"]>span{
+  padding: 50px;
+  flex:1;
+  font-size: 20px;
+  line-height: 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+div[class="intro_item"]>img, div[class="intro_item reverse_order"]>img{
+  
+  width:  350px;
+  height: 250px;
+}
+
+div[class="intro_item"] h2,div[class="intro_item reverse_order"] h2{
+  font-size:30px;
+  font-weight: bold;
+}
+
+.reverse_order{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* menu section */
+.menu_section>table{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  padding: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+th,td{
+  padding:10px 30px;
+  border: 3px solid #dddddd;
+}
+
+/* contact name */
+.contact_section{
+  
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+  line-height: 30px;
+  height: 60vh;
+  padding:50px 20px 250px 20px;
+  font-size: 20px;
+
+  color: white;
+  background-color: #1F2937;
+  
+}
+
+.contact_item{
+  padding:0 50px;
+}
+
+.contact_item>h2{
+  font-weight: bold;
+}
