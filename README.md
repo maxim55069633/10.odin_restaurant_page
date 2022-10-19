@@ -1,10 +1,12 @@
 # 10.odin_restaurant_page
 
+[Task Description](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)
+
 [Live preview](https://maxim55069633.github.io/10.odin_restaurant_page/)
 
 In this project, I use webpack to bundle modules. This is a practice about manipulating DOM by dynamically rendering a simple restaurant homepage. 
 
-I successfully overcome the following obstables:
+I learn:
 1. Add a .gitignore file to my project so that I don’t have to sync the contents of node_modules to github.
 2. Run `npx webpack --watch` to commit new changes to dist/index.html in real time.
 3. Find [a website](https://css-tricks.com/the-shapes-of-css/) that teaches how to create different shapes using CSS
